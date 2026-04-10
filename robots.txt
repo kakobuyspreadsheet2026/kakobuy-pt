@@ -1,0 +1,5 @@
+# https://kakobuy.pt/
+User-agent: *
+Allow: /
+
+Sitemap: https://kakobuy.pt/sitemap.xml
