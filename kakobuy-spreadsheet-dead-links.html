@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="icon" href="images/favicon-kakobuy.svg" type="image/svg+xml" />
     <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <title>Ligações mortas no kakobuy spreadsheet | o que fazer | kakobuy.pt</title>
+    <title>Kakobuy Spreadsheet Dead Links | How We Handle Stale Rows | kakobuy spreadsheet</title>
     <meta
       name="description"
-      content="Porque é que URLs Taobao/Weidian/1688 expiram, como substituir linhas no hub e evitar submeter links quebrados na Kakobuy."
+      content="How Kakobuy spreadsheet dead links happen, how stale rows are marked, and what buyers should do when a seller page disappears or a batch is replaced."
     />
     <link rel="canonical" href="https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" />
-    <link rel="alternate" hreflang="pt-PT" href="https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:locale" content="pt_PT" />
     <meta property="og:url" content="https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" />
-    <meta property="og:title" content="Links mortos na planilha Kakobuy" />
-    <meta property="og:description" content="Guia prático em português europeu." />
-    <meta property="og:image" content="https://kakobuy.pt/images/og-article-dead-links.jpg" />
-    <meta property="og:image:secure_url" content="https://kakobuy.pt/images/og-article-dead-links.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Links mortos no kakobuy spreadsheet — validar antes da Kakobuy" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Links mortos na planilha Kakobuy" />
-    <meta name="twitter:description" content="Guia prático em português europeu." />
-    <meta name="twitter:image" content="https://kakobuy.pt/images/og-article-dead-links.jpg" />
-    <meta name="twitter:image:alt" content="Links mortos no kakobuy spreadsheet — validar antes da Kakobuy" />
+    <meta property="og:title" content="Kakobuy Spreadsheet Dead Links | How We Handle Stale Rows" />
+    <meta
+      property="og:description"
+      content="Why Kakobuy spreadsheet links die, how we mark stale rows, and what to do before submitting a link in Kakobuy."
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://kakobuy.pt/" },
-          { "@type": "ListItem", "position": 2, "name": "Guias", "item": "https://kakobuy.pt/guides.html" },
-          { "@type": "ListItem", "position": 3, "name": "Ligações mortas", "item": "https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://kakobuy.pt/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://kakobuy.pt/guides.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kakobuy Spreadsheet Dead Links",
+            "item": "https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html"
+          }
         ]
       }
     </script>
@@ -45,122 +51,139 @@
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Ligações mortas no kakobuy spreadsheet",
-        "inLanguage": "pt-PT",
-        "datePublished": "2026-04-10",
-        "dateModified": "2026-04-10",
-        "author": { "@type": "Organization", "name": "kakobuy.pt" },
-        "publisher": { "@type": "Organization", "name": "kakobuy.pt", "url": "https://kakobuy.pt/" },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://kakobuy.pt/images/news/browser-search.jpg",
-          "width": 1200,
-          "height": 855
+        "headline": "Kakobuy Spreadsheet Dead Links",
+        "datePublished": "2026-03-26",
+        "dateModified": "2026-04-05",
+        "author": {
+          "@type": "Organization",
+          "name": "Kakobuy Spreadsheet"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Kakobuy Spreadsheet",
+          "url": "https://kakobuy.pt/"
         },
         "mainEntityOfPage": "https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html"
       }
     </script>
+        <link rel="alternate" hreflang="en" href="https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" />
+    <link rel="alternate" hreflang="pt-PT" href="https://kakobuy.pt/pt/kakobuy-spreadsheet-dead-links.html" />
+    <link rel="alternate" hreflang="x-default" href="https://kakobuy.pt/kakobuy-spreadsheet-dead-links.html" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="/" aria-label="Início kakobuy spreadsheet">
-          <picture><source type="image/webp" srcset="images/kakobuy-wordmark.webp" /><img class="brand-logo" src="images/kakobuy-wordmark.png" width="152" height="32" alt="Kakobuy" decoding="async" /></picture>
+        <a class="brand" href="/" aria-label="kakobuy spreadsheet home">
+          <img class="brand-logo" src="images/kakobuy-wordmark.png" width="152" height="32" alt="Kakobuy" decoding="async" />
           <span class="brand-text"><span class="brand-lockup-suffix">spreadsheet</span></span>
         </a>
-        <nav aria-label="Principal">
+        <nav aria-label="Primary">
           <ul>
-            <li><a href="/">Início</a></li>
-            <li><a href="guides.html" aria-current="page">Guias</a></li>
-            <li><a href="spreadsheet.html">Planilha</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="news.html">Notícias</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="guides.html" aria-current="page">Guides</a></li>
+            <li><a href="spreadsheet.html">Spreadsheet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="news.html">News</a></li>
           </ul>
         </nav>
-        <div class="header-end">
+                <div class="header-end">
           <div class="header-cta">
-            <a class="btn btn-primary" href="https://maisonlooks.com/?utm_source=kakobuy.pt">Abrir hub</a>
+            <a class="btn btn-primary" href="https://maisonlooks.com/?utm_source=kakobuy.pt">Open hub</a>
           </div>
+          <nav class="header-lang" aria-label="Language">
+            <a href="/kakobuy-spreadsheet-dead-links.html" hreflang="en" aria-current="page">EN</a>
+            <span class="header-lang-sep" aria-hidden="true">·</span>
+            <a href="/pt/kakobuy-spreadsheet-dead-links.html" hreflang="pt-PT">PT</a>
+          </nav>
         </div>
       </div>
     </header>
     <main class="article-page" id="main">
-      <nav class="page-breadcrumbs" aria-label="Navegação estrutural">
-        <a href="/">Início</a>
+      <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
         <span aria-hidden="true">/</span>
-        <a href="guides.html">Guias</a>
+        <a href="guides.html">Guides</a>
         <span aria-hidden="true">/</span>
-        <span>Ligações mortas</span>
+        <span>Dead links</span>
       </nav>
       <article class="article-shell">
-        <p class="article-kicker">Manutenção de linhas</p>
-        <h1>Link da planilha que não abre? Normal.</h1>
-        <p class="article-meta"><time datetime="2026-04-10">10 de abril de 2026</time> · leitura ~4 min</p>
+        <p class="article-kicker">Maintenance note</p>
+        <h1>Kakobuy spreadsheet dead links: what they mean and what to do</h1>
+        <p class="article-meta">
+          <time datetime="2026-03-26">March 26, 2026</time> · 4 min read
+        </p>
         <p class="article-lead">
-          Num <strong>kakobuy spreadsheet</strong> com vida, links morrem como folhas no outono. O vendedor
-          apaga o anúncio, muda de batch, ou mete o mesmo produto noutro URL porque sim. Não é falha tua —
-          mas também não vale a pena colar na Kakobuy um endereço que já não respira.
+          Dead links are normal in any active <strong>Kakobuy spreadsheet</strong>.
+          Sellers remove products, move listings, swap batches, or stop supporting a
+          specific item. The goal is not zero dead rows forever—the goal is to catch
+          and replace them quickly.
         </p>
-        <h2>Porque é que isto acontece tantas vezes</h2>
+        <h2>Why rows go stale</h2>
         <p>
-          Do lado de lá, tudo gira rápido: acaba stock, sobe preço, fecha a loja por uns dias, volta com
-          fotos novas. A tua linha favorita de segunda-feira pode estar morta na quarta.
+          Chinese marketplace listings change frequently. A seller may remove a page,
+          relist the same product under a new URL, or replace an old batch with a
+          newer version that makes the previous row less useful.
         </p>
         <ul>
-          <li>Picos de vendas → anúncio some temporariamente.</li>
-          <li>A grelha atualiza em ritmo humano; o Taobao não espera por ninguém.</li>
-          <li>Às vezes o link abre mas já não é o mesmo lote — lê a página com desconfiança saudável.</li>
+          <li>Temporary listing removals can happen after sales or stock changes.</li>
+          <li>Some rows stay visible longer than the source listing does.</li>
+          <li>A better replacement can make an older row effectively stale.</li>
         </ul>
-        <h2>O que o pessoal do hub costuma fazer</h2>
+        <h2>How dead links are usually handled</h2>
         <p>
-          Há gente a marcar linhas velhas, a substituir por links novos, a apagar entradas que enganam. Dá
-          trabalho e nunca fica perfeito ao segundo — por isso ainda precisas do teu próprio teste no
-          browser.
+          Stale rows are typically marked or removed during refresh passes. When a row
+          is clearly outdated, it is better to replace it with a cleaner option than
+          leave a misleading result in the hub.
         </p>
-        <h2>O teu protocolo simples</h2>
+        <h2>What buyers should do</h2>
         <ul>
-          <li>Clica no link antes de mandar a Kakobuy comprar. É chato e evita 90% do drama.</li>
-          <li>Morreu? Volta à categoria e procura outra linha parecida — quase sempre há segunda opção.</li>
-          <li>Se vês o mesmo padrão em vários sítios, avisa no Discord; ajuda a próxima pessoa.</li>
-          <li>Não insistas em 404 ou redirect infinito — não vai milagrar.</li>
+          <li>Open the link before you assume a row is still active.</li>
+          <li>If the item is gone, search the category for an updated version.</li>
+          <li>Use Discord to report a dead row if you want it reviewed faster.</li>
+          <li>Do not submit obviously broken links into Kakobuy.</li>
         </ul>
-        <h2>Mentalidade que poupa tempo</h2>
+        <h2>Good habit for spreadsheet users</h2>
         <p>
-          A planilha é um mapa, não um contrato. Quando aceitas isso, deixas de levar cada link morto como
-          insulto pessoal e passas à seguinte mais depressa.
+          Treat the spreadsheet as a curated discovery layer, not a guarantee that
+          every row is permanent. That mindset helps you move faster when a seller
+          changes inventory and prevents wasted time during checkout.
         </p>
         <p>
-          Para ver o catálogo mais fresco, vai ao <a href="spreadsheet.html">hub</a>; se o problema já for
-          “como é que pago isto?”, lê os <a href="guides.html">oito passos</a>.
+          If you want the most current view, go straight to the <a href="spreadsheet.html">live hub</a>,
+          then cross-check with <a href="contact.html">community feedback</a> when
+          a link looks uncertain.
+        </p>
+        <p>
+          For the bigger picture—how rows connect to rehearsal and warehouse QC—read
+          <a href="guides.html">our eight-step Kakobuy guides</a>.
         </p>
       </article>
       <section class="related-links-block" aria-labelledby="deadlinks-related">
-        <h2 id="deadlinks-related">E depois?</h2>
+        <h2 id="deadlinks-related">Related resources</h2>
         <div class="related-links-grid">
           <a class="related-link-card" href="spreadsheet.html">
-            <strong>Ir ao catálogo</strong>
-            <span>O sítio onde as linhas são mais frescas do que neste artigo.</span>
+            <strong>Open the hub</strong>
+            <span>Use the live Kakobuy spreadsheet browsing page to find updated rows.</span>
           </a>
           <a class="related-link-card" href="contact.html">
-            <strong>Discord</strong>
-            <span>“Alguém mais com este link morto?” — pergunta clássica.</span>
+            <strong>Report in Discord</strong>
+            <span>Share stale rows or missing links in the community.</span>
           </a>
           <a class="related-link-card" href="guides.html">
-            <strong>Guia em oito passos</strong>
-            <span>Quando finalmente encontras um URL que abre e queres fechar o ciclo.</span>
+            <strong>Guides (8 steps)</strong>
+            <span>Full Kakobuy workflow from spreadsheet row to international shipping.</span>
           </a>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
-        <p>© <span id="y"></span> kakobuy.pt</p>
+        <p>© <span id="y"></span> kakobuy spreadsheet — Kakobuy platform merchants.</p>
         <div class="footer-links">
-          <a href="/">Início</a>
-          <a href="guides.html">Guias</a>
-          <a href="news.html">Notícias</a>
+          <a href="/">Home</a>
+          <a href="guides.html">Guides</a>
         </div>
       </div>
     </footer>

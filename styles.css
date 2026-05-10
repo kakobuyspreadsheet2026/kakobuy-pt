@@ -2245,3 +2245,33 @@ section[aria-labelledby="faq-title"] {
 .ai-hub-disclaimer strong {
   color: #44403c;
 }
+
+/* Bilingual header (EN default + PT) */
+.header-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #57534e;
+}
+.header-lang-sep {
+  color: #a8a29e;
+  font-weight: 500;
+}
+.header-lang a {
+  color: #44403c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.header-lang a:hover {
+  color: var(--accent);
+  border-bottom-color: rgba(194, 65, 12, 0.25);
+}
+.header-lang a[aria-current="page"] {
+  color: var(--accent);
+  cursor: default;
+  border-bottom-color: rgba(194, 65, 12, 0.4);
+  pointer-events: none;
+}
